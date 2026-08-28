@@ -187,3 +187,26 @@ function validarCliente(
         return false; 
     } 
 } 
+echo "Testando o sistema";
+
+echo "Nome: " . formatarNome("  JOÃO SILVA  ") . "<br>";
+
+echo "CPF válido: ";
+
+if (validarCPF("12345678901")) {
+    echo "Sim";
+} else {
+    echo "Não";
+}
+
+
+echo "E-mail válido: ";
+
+if (validarEmail("joao@email.com")) {
+    echo "Sim";
+} else {
+    echo "Não";
+}
+
+
+echo "Valor: " . formatarMoeda(1500.00);

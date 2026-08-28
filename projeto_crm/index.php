@@ -1,7 +1,8 @@
-```php
 <?php
 
 declare(strict_types=1);
+
+echo"funcionou!";
 
 // Formata o nome do cliente
 function formatarNome(string $nome): string
