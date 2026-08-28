@@ -161,7 +161,7 @@ function maiorContrato(array $clientes): float
     return $maior; 
 } 
  
-/** 
+/*
  * Valida os dados básicos de um cliente. 
  */ 
 function validarCliente( 
