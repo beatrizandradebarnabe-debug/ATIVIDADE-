@@ -13,36 +13,32 @@ echo "<h1> Central de Atendimento e Cadastro do CRM Senai </h1>";
 $nome = "  ANA CLARA SILVA "; 
 
 echo "<h2>Teste 1 - Formatar nome</h2>"; 
-echo "Resultado: " . formatarNome($nome); 
+echo "Nome do(a) Cliente: " . formatarNome($nome); 
  
 /* 
  * TESTE 2 - Limpeza do CPF 
  */ 
  
-$cpf = "123.456.789-00"; 
+$cpf = "123.956.789-00"; 
  
 echo "<h2>Teste 2 - Limpar CPF</h2>"; 
-echo "Resultado: " . limparCPF($cpf); 
+echo "CPF do(a) Cliente: " . limparCPF($cpf); 
  
  
 /* 
  * TESTE 3 - CPF válido 
  */ 
  
-echo "<h2>Teste 3 - Validar CPF</h2>"; 
+echo "<h2>Validação CPF</h2>"; 
  
-if (validarCPF("123.456.789-00")) { 
+if (validarCPF("123.456.780-00")) { 
     echo "CPF válido."; 
 } else { 
     echo "CPF inválido."; 
 } 
  
  
-/* 
- * TESTE 4 - CPF inválido 
- */ 
- 
-echo "<h2>Teste 4 - CPF inválido</h2>"; 
+echo "<h2> CPF inválido</h2>"; 
  
 if (validarCPF("123.45")) { 
     echo "CPF válido."; 
@@ -50,12 +46,8 @@ if (validarCPF("123.45")) {
     echo "CPF inválido."; 
 } 
  
- 
-/* 
- * TESTE 5 - E-mail 
- */ 
- 
-echo "<h2>Teste 5 - Validar e-mail</h2>"; 
+
+echo "<h2>Validação e-mail</h2>"; 
  
 if (validarEmail("teste@email.com")) { 
     echo "E-mail válido."; 
@@ -68,7 +60,7 @@ if (validarEmail("teste@email.com")) {
  * TESTE 6 - Contrato igual a zero 
  */ 
  
-echo "<h2>Teste 6 - Contrato igual a zero</h2>"; 
+echo "<h2> Contrato igual a zero</h2>"; 
  
 if (validarCliente( 
     "João", 
@@ -96,7 +88,7 @@ $clientes = [
     ] 
 ]; 
  
-echo "<h2>Teste 7 - Buscar cliente</h2>"; 
+echo "<h2> Buscar cliente</h2>"; 
  
 $cliente = buscarCliente($clientes, "Ana Clara Silva"); 
  
@@ -111,7 +103,7 @@ if ($cliente !== null) {
  * TESTE 8 - Cliente inexistente 
  */ 
  
-echo "<h2>Teste 8 - Cliente inexistente</h2>"; 
+echo "<h2>Cliente inexistente</h2>"; 
  
 $cliente = buscarCliente($clientes, "Carlos Souza"); 
  
@@ -126,7 +118,7 @@ if ($cliente !== null) {
  * TESTE 9 - Reajuste por referência 
  */ 
  
-echo "<h2>Teste 9 - Reajuste</h2>"; 
+echo "<h2> Reajuste</h2>"; 
  
 $contrato = 1000.00; 
  
